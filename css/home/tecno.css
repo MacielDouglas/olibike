@@ -1,0 +1,9 @@
+.tecno_bg {
+  background-color: var(--cor_11);
+}
+
+.tecno {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}

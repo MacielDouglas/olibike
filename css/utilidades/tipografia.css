@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
 .font_1_xs {
   font: 400 0.75rem/1.35 "Poppins", sans-serif;
 }
@@ -9,7 +11,7 @@
 }
 
 .font_2_s {
-  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 .font_1_m,
 .font_1_m_b {
@@ -48,6 +50,15 @@
 
 .font_1_xxl {
   font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+.font_olibike_1 {
+  font: 400 1.5rem/1.5 "Comfortaa", cursive;
+}
+.font_olibike_b {
+  font: 700 1.5rem/1.5 "Comfortaa", cursive;
+  color: linear-gradient(#fb0505, #cd0101);
+  color: #fb0505;
 }
 
 @media (max-width: 1200px) {
