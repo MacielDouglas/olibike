@@ -1,9 +1,86 @@
 .tecno_bg {
   background-color: var(--cor_11);
+  box-shadow: inset 0 80px var(--cor_0), inset 0 -80px var(--cor_0);
 }
 
 .tecno {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+}
+
+.tecno_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecno_img img {
+  height: 100%;
+  border-radius: none;
+}
+
+.tecno_conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecno_conteudo > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecno_conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecno_conteudo > p {
+  margin-bottom: 32px;
+}
+
+.tecno_conteudo a {
+  margin-bottom: 80px;
+}
+
+.tecno_vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecno_vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.tecno_vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .tecno_bg {
+    box-shadow: initial;
+  }
+  .tecno {
+    grid-template-columns: 1fr;
+  }
+  .tecno_conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecno_img {
+    display: none;
+  }
+
+  .tecno a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecno_vantagens {
+    flex-direction: column;
+  }
 }

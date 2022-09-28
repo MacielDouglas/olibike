@@ -1,0 +1,58 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+
+.parceiros ul {
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.parceiros li {
+  padding: 32px;
+  display: flex;
+  /* margin: auto; */
+  border-left: 2px solid var(--cor_2);
+}
+
+.parceiros li:first-child {
+  border-left: none;
+}
+.parceiros img {
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px;
+  }
+
+  .parceiros h2 {
+    margin-bottom: 20px;
+    font: 600 2rem/1.25 "Poppins", sans-serif;
+  }
+}
+/* @media (max-width: 480px) {
+  .parceiros h2 {
+    font: 600 2rem/1.25 "Poppins", sans-serif;
+  }
+} */
+
+@media (max-width: 400px) {
+  .parceiros img {
+    width: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .parceiros img {
+    font: font: 400 1.5rem/1.5 "Poppins", sans-serif;;
+  }
+}
