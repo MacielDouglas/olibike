@@ -13,10 +13,15 @@
 @import "./home/tecno.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
-@import "./home/manutencao.css";
+
+/* manutenção */
+@import "./manutencao/manutencao.css";
+@import "./manutencao/vantagens.css";
+@import "./manutencao/perguntas.css";
 
 /* Bicicletas */
 @import "./biciletas/biciletas_lista.css";
+@import "./biciletas/bicicletas.css";
 
 /* Termos */
 @import "./termos/termos.css";
