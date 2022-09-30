@@ -16,12 +16,33 @@
   color: var(--cor_10);
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
 }
 
 .botao:hover {
   padding: 14px 30px;
   border: 2px solid var(--cor_p1);
   background: linear-gradient(#fafafa, #c9c9c9);
+}
+.botao.primario {
+  background: var(--cor_10);
+  background: linear-gradient(#2e2e2e, #111111);
+  color: var(--cor_2);
+}
+.botao.primario:hover {
+  background: #2e2e2e;
+  border: 2px solid transparent;
+}
+
+.botao.secundario {
+  background: linear-gradient(#e82300, #6e0000);
+  color: var(--cor_p5);
+  border: none;
+}
+.botao.secundario:hover {
+  background: var(--cor_p1);
+  border: none;
+  border: 2px solid var(--cor_p1);
 }
 
 @media (max-width: 600px) {
@@ -49,4 +70,28 @@
 
 .link:hover {
   color: var(--cor_0);
+}
+
+/* titulos internos */
+.titulo_bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor_11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo_bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
