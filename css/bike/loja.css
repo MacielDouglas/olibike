@@ -1,0 +1,43 @@
+.loja_bg {
+  background-color: var(--cor_11);
+  box-shadow: inset 0 120px var(--cor_0), inset 0 -120px var(--cor_12);
+}
+
+.loja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.loja_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loja_conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.loja h2 {
+  margin-bottom: 32px;
+}
+
+.loja p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .loja_bg {
+    box-shadow: inset 0 -60px var(--cor_12);
+  }
+  .loja {
+    grid-template-columns: 1fr;
+  }
+  .loja_conteudo {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+}

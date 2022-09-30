@@ -7,7 +7,7 @@
   margin-bottom: 40px;
 }
 
-.bicicletas_lista_items {
+.bicicletas_lista ul {
   display: flex;
   gap: 40px;
   padding: 0 20px 20px 20px;
@@ -16,6 +16,10 @@
   margin-right: auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+#bicicletas .bicicletas_lista ul {
+  padding: 0px 0px 20px 0px;
 }
 
 /* para deixar com scroll no mobile foi usado  a propriedade abaixo mais o overflow acima */
