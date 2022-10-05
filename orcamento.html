@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Faça um orçamento de uma bike #olibike.">
     <title>Orçamento</title>
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body id="termos">
+<body id="orcamento">
     <header class="header_bg">
         <div class="header container">
             <a href="./index.html"><img src="./img/olibike.svg" alt="Olibike"></a>
@@ -38,6 +39,119 @@
             </div>
         </div>
 
+        <form class="orcamento container" action="./">
+            <div class="orcamento_produto">
+                <h2 class="font_1_xs cor_C5">Bicicletas ou Manutenção?</h2>
+
+                <input type="radio" name="tipo" value="bicicleta" id="bicicleta">
+                <label for="bicicleta">Bicicleta</label>
+
+                <input type="radio" name="tipo" value="manutencao" id="manutencao">
+                <label for="manutencao">Manutenção</label>
+
+                <div class="orcamento_conteudo" id="orcamento_bicicleta">
+
+
+                    <h2 class="font_1_xs cor_C5">Escolha a sua #oliBike</h2>
+
+                    <input type="radio" name="produto" value="olispeed" id="olispeed">
+                    <label for="olispeed">oliSpeed <span>R$ 4999</span></label>
+                    <div class="orcamento_detalhes">
+                        <ul class="font_1_xs cor_C8">
+                            <li><img src="./img/bicicletas/icones_bicicletas/velocidade.svg" alt="">Cambio 24v</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/led.svg" alt="">Led Sinalização</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/garantia.svg" alt="">Garantia 24 meses</li>
+                        </ul>
+                        <img src="./img/bicicletas/oliSpeed.jpg" width="1120" height="680" alt="bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" value="olirout" id="olirout">
+                    <label for="olirout">oliRout <span>R$ 3599</span></label>
+                    <div class="orcamento_detalhes">
+                        <ul class="font_1_xs cor_C8">
+                            <li><img src="./img/bicicletas/icones_bicicletas/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/led.svg" alt="">Led Sinalização</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/garantia.svg" alt="">Garantia 12 meses</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/velocidade.svg" alt="">Cambio 21 ou 24v (opicional)</li>
+                        </ul>
+                        <img src="./img/bicicletas/oliRout.jpg" width="1120" height="680" alt="bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" value="oliurban" id="oliurban">
+                    <label for="oliurban">oliUrban <span>R$ 2999</span></label>
+                    <div class="orcamento_detalhes">
+                        <ul class="font_1_xs cor_C8">
+                            <li><img src="./img/bicicletas/icones_bicicletas/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/led.svg" alt="">Led Sinalização</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/garantia.svg" alt="">Garantia 12 meses</li>
+                            <li><img src="./img/bicicletas/icones_bicicletas/velocidade.svg" alt="">Cambio 21 ou 24v (opicional)</li>
+                        </ul>
+                        <img src="./img/bicicletas/oliUrban.jpg" width="1120" height="680" alt="bicicleta preta">
+                    </div>
+
+                </div>
+
+                <div class="orcamento_conteudo" id="orcamento_manutencao">
+                    <h2 class="font_1_xs cor_C5">Escolha o plano de manutenção</h2>
+
+                    <input type="radio" name="produto" value="weekend" id="weekend">
+                    <label for="weekend">WEEKEND <span>R$ 99</span></label>
+
+                    <input type="radio" name="produto" value="high_power" id="high_power">
+                    <label for="high_power">HIGH POWER <span>R$ 299</span></label>
+
+                </div>
+
+
+            </div>
+
+            <div class="orcamento_dados form">
+                <h2 class="font_1_xs cor_C9 col_2">dados pessoais</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome">
+                </div>
+                <div class="col_2">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-40">
+                </div>
+                <div class="col_2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <h2 class="font_1_xs cor_C9 col_2">entrega</h2>
+                <div class="col_2">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+                <div class="col_2">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div class="col_2">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+                <div class="col_2">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div class="col_2">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div class="col_2">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <button class="botao col_2">Solicitar Orçamento</button>
+            </div>
+        </form>
 
     </main>
 

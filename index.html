@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bicicletas feitas sob medida, proporcionando conforto e desempenho, sem lesões. Explore o mundo com a #olibike.">
     <title>#olibike - Sua Nova Bike</title>
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +38,10 @@
                 <p class="font_2_l cor_C5">Bicicletas feitas sob medida, proporcionando conforto e desempenho, sem lesões. Explore o mundo com a <span class="font_olibike_1 cor_1">#oli<span class="font_olibike_b">b</span>ike</span></p>
                 <a class="botao" href="./bikes.html">selecione a sua</a>
             </div>
-            <div>
+            <picture>
+                <source media="(max-width: 800px)" srcset="./img/bicicletas/oliSpeed.jpg">
                 <img src="./img/img-intro.jpg" alt="Bicicleta preta">
-            </div>
+            </picture>
         </div>
 
     </main>
@@ -50,21 +52,21 @@
         <ul class="bicicletas_lista_items">
             <li>
                 <a href="./bikes/olispeed.html">
-                    <img src="./img/bike_01.jpg" alt="bicicleta preta">
+                    <img src="./img/bike_01.jpg" width="1040" height="920" alt="bicicleta preta">
                     <h3 class="font_1_xl">oli<span class="cor_P1">S</span>peed</h3>
                     <span class="font_2_m cor_C8 alin">R$ 4999</span>
                 </a>
             </li>
             <li>
                 <a href="./bikes/olirout.html">
-                    <img src="./img/bike_02.jpg" alt="bicicleta preta">
+                    <img src="./img/bike_02.jpg" width="1040" height="920" alt="bicicleta preta">
                     <h3 class="font_1_xl">oli<span class="cor_P1">R</span>out</h3>
                     <span class="font_2_m cor_C8 alin">R$ 3599</span>
                 </a>
             </li>
             <li>
                 <a href="./bikes/oliurban.html">
-                    <img src="./img/bike_03.jpg" alt="bicicleta preta">
+                    <img src="./img/bike_03.jpg" width="1040" height="920" alt="bicicleta preta">
                     <h3 class="font_1_xl">oli<span class="cor_P1">U</span>ban</h3>
                     <span class="font_2_m cor_C8 alin">R$ 2599</span>
                 </a>
@@ -101,7 +103,7 @@
             </div>
 
             <div class="tecno_img">
-                <img src="img/ferramentas.jpg" alt="">
+                <img src="img/ferramentas.jpg" width="1436" height="2112" alt="varias ferramentas expostas">
             </div>
 
         </div>
@@ -118,7 +120,7 @@
 
     <section class="depoimento" aria-label="Depoimento">
         <div>
-            <img src="img/depoimento.jpg" alt="mulher andando numa olibike">
+            <img src="img/depoimento.jpg" width="1440" height="1360" alt="mulher andando numa olibike">
         </div>
         <div class="depoimento_conteudo">
             <blockquote class="font_1_xl cor_P5">
