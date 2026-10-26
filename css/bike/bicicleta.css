@@ -27,6 +27,10 @@
   min-width: 100%;
 }
 
+.bicicleta_img img:not(:first-child) {
+  cursor: pointer;
+}
+
 .bicicleta_conteudo > p {
   margin-bottom: 32px;
 }

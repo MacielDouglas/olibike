@@ -36,6 +36,21 @@
   gap: 32px;
 }
 
+.footer_redessociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.footer_contato a,
+.footer_informacoes a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .footer a:hover {
   color: var(--cor_0);
 }

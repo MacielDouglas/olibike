@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
-
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--cor_p1);
+  background-color: var(--cor_p2);
   overflow: hidden;
 }
 
@@ -19,6 +17,10 @@
   align-self: end;
 }
 
+.depoimento blockquote {
+  color: var(--cor_0);
+}
+
 .depoimento_conteudo p {
   max-width: 32ch;
   font-family: "Merriweather", serif;
@@ -31,8 +33,12 @@
 .depoimento p::before,
 .depoimento p::after {
   font-size: 5rem;
-  color: var(--cor_p2);
+  color: var(--cor_p6);
   position: absolute;
+}
+
+.depoimento_conteudo .cor_P4 {
+  color: var(--cor_0);
 }
 
 .depoimento p::before {

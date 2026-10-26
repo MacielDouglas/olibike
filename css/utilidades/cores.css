@@ -18,6 +18,9 @@
   --cor_p4: #6e0000;
   --cor_p5: #450000;
   --cor_p6: #1d0101;
+  --cor_p1_texto: #c81e00;
+  --cor_p1_texto_escuro: #ff6a4d;
+  --cor_p1_logo: #fb0505;
 }
 .cor_0 {
   color: var(--cor_0);
@@ -75,4 +78,17 @@
 }
 .cor_P6 {
   color: var(--cor_p6);
+}
+
+/* Texto vermelho pequeno: tons ajustados por superfície para manter 4.5:1 */
+.cor_C8 .cor_P1,
+.cor_C9 .cor_P1,
+.cor_C10 .cor_P1,
+.cor_C11 .cor_P1 {
+  color: var(--cor_p1_texto);
+}
+
+.cor_C5 .cor_P1,
+.cor_C6 .cor_P1 {
+  color: var(--cor_p1_texto_escuro);
 }

@@ -68,6 +68,14 @@
   padding-left: 28px;
 }
 
+.contato_redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
 @media (max-width: 800px) {
   .contato {
     grid-template-columns: 1fr;

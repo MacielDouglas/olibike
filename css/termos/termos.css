@@ -3,6 +3,14 @@
   padding-bottom: 80px;
 }
 
+.termos .termos_aviso {
+  padding: 16px 20px;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--cor_p1);
+  background: var(--cor_1);
+  color: var(--cor_9);
+}
+
 .termos h2 {
   font-weight: 600;
   margin-bottom: 20px;

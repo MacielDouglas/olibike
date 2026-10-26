@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="`Programa de manutenção #olibike.">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Planos de manutenção #olibike a partir de R$ 99/mês: lavagem, ajustes, alinhamento de rodas e troca de pneus. Sua bike sempre em dia.">
     <title>Manutenção | #olibike</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="#olibike">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Manutenção | #olibike">
+    <meta property="og:description" content="Planos de manutenção #olibike a partir de R$ 99/mês: lavagem, ajustes, alinhamento de rodas e troca de pneus. Sua bike sempre em dia.">
+    <meta property="og:url" content="https://olibike.web.app/manutencao.html">
+    <meta property="og:image" content="https://olibike.web.app/img/bicicletaria.jpg">
+    <meta property="og:image:alt" content="Interior de uma bicicletaria">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="./favicon.svg">
     <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="stylesheet" href="./css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
     <script>document.documentElement.classList.add('js');</script>
 </head>
 
@@ -22,7 +32,7 @@
         <div class="header container">
             <a href="./index.html"><img src="./img/olibike.svg" alt="Olibike"></a>
 
-            <nav aria-label="primarria">
+            <nav aria-label="Navegação principal">
                 <ul class="header_menu font_1_m cor_0">
                     <li><a href="./bikes.html">bicicletas</a></li>
                     <li><a href="./manutencao.html">manutenção</a></li>
@@ -43,37 +53,38 @@
 
 
         <div class="manutencao container">
+            <h2 class="sr-only">Planos de manutenção</h2>
             <div class="manutencao_item">
                 <h3 class="font_1_xl cor_C6">WEEKEND</h3>
-                <span class="font_1_xl cor_0">R$ 99 <span class="font_1_xs cor_C6">mensal</span> </span>
+                <span class="font_1_xl cor_0">R$ 99 <span class="font_1_xs cor_C6">/mês</span> </span>
                 <ul class="font_2_m cor_0">
-                    <li>Duas lavagens mensais</li>
-                    <li>Dois ajustes técnicos</li>
-                    <li>Dois alinhamentos rodas</li>
-                    <li>01 par de pneus e camara cada seis meses</li>
+                    <li>2 lavagens mensais</li>
+                    <li>2 ajustes técnicos</li>
+                    <li>2 alinhamentos de rodas</li>
+                    <li>1 par de pneus e câmeras a cada seis meses</li>
                 </ul>
-                <a class="botao primario" href="./orcamento.html?tipo=manutencao&produto=weekend">Selecione</a>
+                <a class="botao primario" href="./orcamento.html?tipo=manutencao&produto=weekend">Solicitar orçamento</a>
             </div>
 
-            <div class=" manutencao_item">
+            <div class="manutencao_item">
                 <h3 class="font_1_xl cor_P1">HIGH POWER</h3>
-                <span class="font_1_xl cor_0">R$ 299 <span class="font_1_xs cor_C6">mensal</span> </span>
+                <span class="font_1_xl cor_0">R$ 299 <span class="font_1_xs cor_C6">/mês</span> </span>
                 <ul class="font_2_m cor_0">
-                    <li>Quatro lavagens mensais</li>
-                    <li>Quatro ajustes técnicos</li>
-                    <li>Quatro alinhamentos rodas</li>
-                    <li>01 par de pneus e camara cada seis meses</li>
-                    <li>01 troca de fluido de freio cada seis meses</li>
-                    <li>01 troca de par pastilha freio cada seis meses</li>
+                    <li>4 lavagens mensais</li>
+                    <li>4 ajustes técnicos</li>
+                    <li>4 alinhamentos de rodas</li>
+                    <li>1 par de pneus e câmeras a cada seis meses</li>
+                    <li>1 troca de fluido de freio a cada seis meses</li>
+                    <li>1 troca de pastilhas de freio a cada seis meses</li>
                 </ul>
-                <a class="botao" href="./orcamento.html?tipo=manutencao&produto=high_power"">Selecione</a>
+                <a class="botao" href="./orcamento.html?tipo=manutencao&produto=high_power">Solicitar orçamento</a>
             </div>
         </div>
     </main>
 
-    <article class=" vantagens_bg">
+    <article class="vantagens_bg">
                     <div class="vantagens container">
-                        <h2 class="font_1_xxl cor_0">vantagens manutenção<span class="cor_P1">.</span></h2>
+                        <h2 class="font_1_xxl cor_0">vantagens da manutenção<span class="cor_P1">.</span></h2>
 
                         <ul>
                             <li>
@@ -89,17 +100,17 @@
                             <li>
                                 <img src="img/icones_vantagens/AlinRoda.svg" alt="">
                                 <h3 class="font_1_l cor_0">Alinhamento de rodas</h3>
-                                <p class="font_2_s cor_C5">Sim biciletas também precisam de alinhar as rodas. E faremos isso para você, para pedalar com conforto e segurança.</p>
+                                <p class="font_2_s cor_C5">Sim, bicicletas também precisam alinhar as rodas. E faremos isso para você, para pedalar com conforto e segurança.</p>
                             </li>
                             <li>
                                 <img src="img/icones_vantagens/pneusCamaras.svg" alt="">
-                                <h3 class="font_1_l cor_0">Troca de pneus e camaras</h3>
-                                <p class="font_2_s cor_C5">Nada melhor do que pneus e camaras novas. Você poderá ter a cada seis meses de uso em um de nossos planos. </p>
+                                <h3 class="font_1_l cor_0">Troca de pneus e câmeras</h3>
+                                <p class="font_2_s cor_C5">Nada melhor do que pneus e câmeras novas. Em um dos nossos planos, você recebe um par novo a cada seis meses.</p>
                             </li>
                             <li>
                                 <img src="img/icones_vantagens/fluido.svg" alt="">
-                                <h3 class="font_1_l cor_0">Troca do fluído de freio</h3>
-                                <p class="font_2_s cor_C5">Sua bike tem freio a disco? Então trocaremos o fluido a cada seis meses, ou substituimos todos os cabos de aço.</p>
+                                <h3 class="font_1_l cor_0">Troca do fluido de freio</h3>
+                                <p class="font_2_s cor_C5">Sua bike tem freio a disco? Então trocaremos o fluido a cada seis meses ou substituiremos todos os cabos de aço.</p>
                             </li>
                             <li>
                                 <img src="img/icones_vantagens/Stop.svg" alt="">
@@ -117,32 +128,32 @@
 
                         <dl>
                             <div>
-                                <dt><button class="font_1_m_b" aria-controls="pergunta1" aria-expanded="true">Quais formas de pagamento aceitamos?</button></dt>
-                                <dd id="pergunta1" class="font_2_s cor_C9 ativa">Aceitamos cartões de crédito com as bandeiras Visa, Mastercard, Elo e American Express. Para pagamentos a vista aceiramos PIX e Boleto através do PagSeguro</dd>
+                                <dt><button class="font_1_m_b" aria-controls="pergunta1" aria-expanded="true">Quais são as formas de pagamento?</button></dt>
+                                <dd id="pergunta1" class="font_2_s cor_C9 ativa">Aceitamos cartões de crédito das bandeiras Visa, Mastercard, Elo e American Express. Para pagamento à vista, aceitamos PIX e boleto.</dd>
                             </div>
                             <div>
-                                <dt><button class="font_1_m_b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar e contato?</button></dt>
-                                <dd id="pergunta2" class="font_2_s cor_C9">Pombo correio, sinal de fumaça... Opa!!! brincadeira!!! Pode nos contatar pelo telefone <span><a href="tel:+5581999991234"></a>+55 81 99999-1234</span>, email: <span><a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a> e pelas nossas redes socias.</span></dd>
+                                <dt><button class="font_1_m_b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                                <dd id="pergunta2" class="font_2_s cor_C9">Fale com a gente pelo telefone <a href="tel:+5581999991234">+55 81 99999-1234</a> ou pelo e-mail <a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a>. Também estamos nas redes sociais.</dd>
                             </div>
                             <div>
-                                <dt><button class="font_1_m_b" aria-controls="pergunta3" aria-expanded="false">Quanto tempo de garantia?</button></dt>
-                                <dd id="pergunta3" class="font_2_s cor_C9">Depende, para a bike oliSpeed você tem 24 meses de garantia. Já a oliRout e oliUrban tem 12 meses de garantia. </dd>
+                                <dt><button class="font_1_m_b" aria-controls="pergunta3" aria-expanded="false">Qual é o prazo de garantia?</button></dt>
+                                <dd id="pergunta3" class="font_2_s cor_C9">A oliSpeed tem 24 meses de garantia. A oliRout e a oliUrban têm 12 meses.</dd>
                             </div>
                             <div>
-                                <dt><button class="font_1_m_b" aria-controls="pergunta4" aria-expanded="false">Como posso devolver?</button></dt>
-                                <dd id="pergunta4" class="font_2_s cor_C9">Puxa devolver? Por que? Nossas bikes são tão boas!!! Entre em contato conosco e veremos o que aconteceu. </dd>
+                                <dt><button class="font_1_m_b" aria-controls="pergunta4" aria-expanded="false">Como faço para devolver?</button></dt>
+                                <dd id="pergunta4" class="font_2_s cor_C9">Entre em contato conosco e vamos entender o que aconteceu para resolver da melhor forma.</dd>
                             </div>
                             <div>
-                                <dt><button class="font_1_m_b" aria-controls="pergunta5" aria-expanded="false">E se chegar com defeito quebrada ou faltando peças?</button></dt>
-                                <dd id="pergunta5" class="font_2_s cor_C9">Isso seria desagradável. Fazemos de tudo para embalar bem e enviar todos os itens. Mas erros podem acontecer. Por isso entre em contato conosco rápidamente para agilizar.</dd>
+                                <dt><button class="font_1_m_b" aria-controls="pergunta5" aria-expanded="false">E se a bike chegar com defeito, quebrada ou faltando peças?</button></dt>
+                                <dd id="pergunta5" class="font_2_s cor_C9">Fazemos o possível para embalar tudo com cuidado e enviar todos os itens. Se algo der errado, fale com a gente o quanto antes para agilizarmos a solução.</dd>
                             </div>
                             <div>
                                 <dt><button class="font_1_m_b" aria-controls="pergunta6" aria-expanded="false">Vocês vendem para todo o Brasil?</button></dt>
-                                <dd id="pergunta6" class="font_2_s cor_C9">Para grande parte do Brasil, Sim!!! Entre em contato e veja a possibilidade de entrega.</dd>
+                                <dd id="pergunta6" class="font_2_s cor_C9">Entregamos em grande parte do Brasil. Fale com a gente para confirmar a disponibilidade para o seu endereço.</dd>
                             </div>
                             <div>
                                 <dt><button class="font_1_m_b" aria-controls="pergunta7" aria-expanded="false">E se eu quiser uma cor que não está no catálogo?</button></dt>
-                                <dd id="pergunta7" class="font_2_s cor_C9">Hum essa é uma boa pergunta!!! Temos algumas cores prontas e em estoque para rápida aplicação e envio. Mas também gostamos de personalizar. Assim se quiser uma cor diferente, sem problema. Pode ser que demore mais para a entrega e terá um custo extra (mas vale pela peronsalização), fale com a gente.</dd>
+                                <dd id="pergunta7" class="font_2_s cor_C9">Temos algumas cores prontas em estoque, com envio rápido. Também fazemos personalização: uma cor diferente pode aumentar o prazo de entrega e ter custo extra, mas a gente adora um projeto sob medida. Fale com a gente.</dd>
                             </div>
                         </dl>
 
@@ -151,27 +162,27 @@
 
                     <footer class="footer_bg">
                         <div class="footer container">
-                            <img src="./img/olibike.svg" alt="Olibike logo">
+                            <img src="./img/olibike.svg" alt="Logo da Olibike">
                             <div class="footer_contato">
                                 <h3 class="font_2_l_b cor_0">Contato</h3>
                                 <ul class="font_2_m cor_C5">
-                                    <li><a href="tel:+5581999991234"></a>+55 81 99999-1234</li>
+                                    <li><a href="tel:+5581999991234">+55 81 99999-1234</a></li>
                                     <li><a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a></li>
-                                    <li>Rua: Caju com banana, 100 - Bairro Bom</li>
-                                    <li>Olinda - Pe</li>
+                                    <li>Rua Caju com Banana, 100 - Bairro Bom</li>
+                                    <li>Olinda - PE</li>
                                 </ul>
                                 <div class="footer_redessociais">
-                                    <a href=". q">
-                                        <img src="./img/icones/instagram.svg" alt="instagram olibike">
+                                    <a href="#">
+                                        <img src="./img/icones/instagram.svg" alt="Instagram da Olibike">
                                     </a>
                                     <a href="#">
-                                        <img src="./img/icones/youtube.svg" alt="Youtube olibike">
+                                        <img src="./img/icones/youtube.svg" alt="YouTube da Olibike">
                                     </a>
                                     <a href="#">
-                                        <img src="./img/icones/facebook.svg" alt="Facebook olibike">
+                                        <img src="./img/icones/facebook.svg" alt="Facebook da Olibike">
                                     </a>
                                     <a href="#">
-                                        <img src="./img/icones/twitter.svg" alt="Twitter olibike">
+                                        <img src="./img/icones/twitter.svg" alt="Twitter da Olibike">
                                     </a>
                                 </div>
                             </div>
@@ -182,7 +193,7 @@
                                         <li><a href="./bikes.html">bicicletas</a></li>
                                         <li><a href="./manutencao.html">manutenção</a></li>
                                         <li><a href="./contato.html">contato</a></li>
-                                        <li><a href="./termos.html">Termos e Condições</a></li>
+                                        <li><a href="./termos.html">Termos e condições</a></li>
                                     </ul>
                                 </nav>
 

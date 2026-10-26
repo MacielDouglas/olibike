@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bicicletas feitas sob medida, proporcionando conforto e desempenho, sem lesões. Explore o mundo com a #olibike.">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Bicicletas feitas sob medida para conforto, desempenho e postura correta. Conheça os modelos oliSpeed, oliRout e oliUrban da #olibike.">
     <title>#olibike - Sua Nova Bike</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="#olibike">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="#olibike - Sua Nova Bike">
+    <meta property="og:description" content="Bicicletas feitas sob medida para conforto, desempenho e postura correta. Conheça os modelos oliSpeed, oliRout e oliUrban da #olibike.">
+    <meta property="og:url" content="https://olibike.web.app/">
+    <meta property="og:image" content="https://olibike.web.app/img/img-intro.jpg">
+    <meta property="og:image:alt" content="Bicicleta oliSpeed em destaque">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="author" content="Douglas Maciel">
     <link rel="icon" href="./favicon.svg">
     <link rel="preload" href="./css/style.min.css" as="style">
@@ -15,7 +25,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -25,7 +35,7 @@
         <div class="header container">
             <a href="./index.html"><img src="./img/olibike.svg" alt="Olibike"></a>
 
-            <nav aria-label="primarria">
+            <nav aria-label="Navegação principal">
                 <ul class="header_menu font_1_m cor_0">
                     <li><a href="./bikes.html">bicicletas</a></li>
                     <li><a href="./manutencao.html">manutenção</a></li>
@@ -36,44 +46,44 @@
         </div>
     </header>
 
-    <main class="introducao_bg">
-        <div class="introducao container ">
-            <div class="introducao_conteudo">
-                <h1 class="font_1_xxl cor_0">Sob Medida<span class="cor_P1">.<span></h1>
-                <p class="font_2_l cor_C5">Bicicletas feitas sob medida, proporcionando conforto e desempenho, sem lesões. Explore o mundo com a <span class="font_olibike_1 cor_1">#oli<span class="font_olibike_b">b</span>ike</span></p>
-                <a class="botao" href="./bikes.html">selecione a sua</a>
+    <main>
+        <div class="introducao_bg">
+            <div class="introducao container ">
+                <div class="introducao_conteudo">
+                    <h1 class="font_1_xxl cor_0">Sob Medida<span class="cor_P1">.</span></h1>
+                    <p class="font_2_l cor_C5">Bicicletas sob medida para conforto e desempenho, com postura correta e sem esforço desnecessário. Explore o mundo com a <span class="font_olibike_1 cor_1">#oli<span class="font_olibike_b">b</span>ike</span></p>
+                    <a class="botao" href="./bikes.html">Escolha a sua bike</a>
+                </div>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./img/bicicletas/oliSpeed.jpg">
+                    <img src="./img/img-intro.jpg" width="1584" height="1424" alt="Bicicleta oliSpeed preta em destaque" fetchpriority="high">
+                </picture>
             </div>
-            <picture>
-                <source media="(max-width: 800px)" srcset="./img/bicicletas/oliSpeed.jpg">
-                <img src="./img/img-intro.jpg" alt="Bicicleta preta">
-            </picture>
         </div>
 
-    </main>
-
-    <article class="bicicletas_lista">
+        <article class="bicicletas_lista">
         <h2 class="container font_1_xxl">escolha a sua<span class="cor_P1">.</span></h2>
 
         <ul class="bicicletas_lista_items">
             <li>
                 <a href="./bikes/olispeed.html">
-                    <img src="./img/bike_01.jpg" width="1040" height="920" alt="bicicleta preta">
+                    <img src="./img/bike_01.jpg" width="920" height="1040" alt="Bicicleta oliSpeed preta" loading="lazy" decoding="async">
                     <h3 class="font_1_xl">oli<span class="cor_P1">S</span>peed</h3>
-                    <span class="font_2_m cor_C8 alin">R$ 4999</span>
+                    <span class="font_2_m cor_C8 alin">R$ 4.999</span>
                 </a>
             </li>
             <li>
                 <a href="./bikes/olirout.html">
-                    <img src="./img/bike_02.jpg" width="1040" height="920" alt="bicicleta preta">
+                    <img src="./img/bike_02.jpg" width="920" height="1040" alt="Bicicleta oliRout preta" loading="lazy" decoding="async">
                     <h3 class="font_1_xl">oli<span class="cor_P1">R</span>out</h3>
-                    <span class="font_2_m cor_C8 alin">R$ 3599</span>
+                    <span class="font_2_m cor_C8 alin">R$ 3.599</span>
                 </a>
             </li>
             <li>
                 <a href="./bikes/oliurban.html">
-                    <img src="./img/bike_03.jpg" width="1040" height="920" alt="bicicleta preta">
-                    <h3 class="font_1_xl">oli<span class="cor_P1">U</span>ban</h3>
-                    <span class="font_2_m cor_C8 alin">R$ 2599</span>
+                    <img src="./img/bike_03.jpg" width="920" height="1040" alt="Bicicleta oliUrban azul-clara" loading="lazy" decoding="async">
+                    <h3 class="font_1_xl">oli<span class="cor_P1">U</span>rban</h3>
+                    <span class="font_2_m cor_C8 alin">R$ 2.999</span>
                 </a>
             </li>
         </ul>
@@ -85,11 +95,11 @@
             <div class="tecno_conteudo">
                 <span class="font_2_l_b cor_C5">tecnologia e precisão</span>
                 <h2 class="font_1_xxl cor_0">você escolhe o estilo, a cor e componentes<span class="cor_P1">.</span></h2>
-                <p class="font_2_l cor_C5">Cada bicicleta é feita sob medida, usando quadro
-                    correto, tamanho exato, pensando na ergonomia
-                    postura, evitando lesões e esforço desnecessário.
-                    Escolha a sua cor preferida e componentes.</p>
-                <a class="link" href="./bicicletas">escolha um modelo</a>
+                <p class="font_2_l cor_C5">Cada bicicleta é feita sob medida, com o quadro
+                    correto e o tamanho exato, pensando na ergonomia e na postura,
+                    evitando lesões e esforço desnecessário.
+                    Escolha a sua cor preferida e os componentes.</p>
+                <a class="link" href="./bikes.html">Ver todos os modelos</a>
                 <div class="tecno_vantagens">
 
                     <div>
@@ -101,14 +111,14 @@
                     <div>
                         <img src="./img/icones/ico_componentes.svg" alt="">
                         <h3 class="font_1_m cor_0">Componentes</h3>
-                        <p class="font_2_s cor_C5">Selim, guidon, suspenção, manopla,
-                            acesórios, marchas</p>
+                        <p class="font_2_s cor_C5">Selim, guidão, suspensão, manopla,
+                            acessórios, marchas</p>
                     </div>
                 </div>
             </div>
 
             <div class="tecno_img">
-                <img src="img/ferramentas.jpg" width="1436" height="2112" alt="varias ferramentas expostas">
+                <img src="img/ferramentas.jpg" width="1436" height="2112" alt="Ferramentas de manutenção de bicicletas expostas na oficina" loading="lazy" decoding="async">
             </div>
 
         </div>
@@ -117,20 +127,20 @@
     <section class="parceiros" aria-label="Nossos Parceiros">
         <h2 class="container font_1_xxl">nossos parceiros <span class="cor_P1">.</span></h2>
         <ul>
-            <li><img src="img/parceiros/p-square.svg" alt="square"></li>
-            <li><img src="img/parceiros/sign-yield-fill.svg" alt="yield"></li>
-            <li><img src="img/parceiros/outlet.svg" alt="outlet"></li>
+            <li><img src="img/parceiros/p-square.svg" alt="Square"></li>
+            <li><img src="img/parceiros/sign-yield-fill.svg" alt="Yield"></li>
+            <li><img src="img/parceiros/outlet.svg" alt="Outlet"></li>
         </ul>
     </section>
 
     <section class="depoimento" aria-label="Depoimento">
         <div>
-            <img src="img/depoimento.jpg" width="1440" height="1360" alt="mulher andando numa olibike">
+            <img src="img/depoimento.jpg" width="1440" height="1360" alt="Mulher pedalando uma bicicleta Olibike" loading="lazy" decoding="async">
         </div>
         <div class="depoimento_conteudo">
             <blockquote class="font_1_xl cor_P5">
-                <p>Sempre amei pedalar, o que o pessoal da #olibike fez foi um produto incrível, pensado no bem estar de quem pedala.
-                    Recomendo a todos</p>
+                <p>Sempre amei pedalar. O que o pessoal da #olibike fez foi um produto incrível, pensado no bem-estar de quem pedala.
+                    Recomendo a todos.</p>
             </blockquote>
             <span class="font_1_m_b cor_P4">Maria Luiza</span>
         </div>
@@ -141,56 +151,57 @@
             <h2 class="font_1_xxl cor_0">manutenção<span class="cor_P1">.</span></h2>
             <div class="manutencao_item">
                 <h3 class="font_1_xl cor_C6">WEEKEND</h3>
-                <span class="font_1_xl cor_0">R$ 99 <span class="font_1_xs cor_C6">mensal</span> </span>
+                <span class="font_1_xl cor_0">R$ 99 <span class="font_1_xs cor_C6">/mês</span> </span>
                 <ul class="font_2_m cor_0">
-                    <li>Duas lavagens mensais</li>
-                    <li>Dois ajustes técnicos</li>
-                    <li>Dois alinhamentos rodas</li>
-                    <li>01 par de pneus e camara cada seis meses</li>
+                    <li>2 lavagens mensais</li>
+                    <li>2 ajustes técnicos</li>
+                    <li>2 alinhamentos de rodas</li>
+                    <li>1 par de pneus e câmeras a cada seis meses</li>
                 </ul>
-                <a class="botao primario" href="./manutencao.html">Selecione</a>
+                <a class="botao primario" href="./manutencao.html">Conhecer plano</a>
             </div>
 
             <div class="manutencao_item">
                 <h3 class="font_1_xl cor_P1">HIGH POWER</h3>
-                <span class="font_1_xl cor_0">R$ 299 <span class="font_1_xs cor_C6">mensal</span> </span>
+                <span class="font_1_xl cor_0">R$ 299 <span class="font_1_xs cor_C6">/mês</span> </span>
                 <ul class="font_2_m cor_0">
-                    <li>Quatro lavagens mensais</li>
-                    <li>Quatro ajustes técnicos</li>
-                    <li>Quatro alinhamentos rodas</li>
-                    <li>01 par de pneus e camara cada seis meses</li>
-                    <li>01 troca de fluido de freio cada seis meses</li>
-                    <li>01 troca de par pastilha freio cada seis meses</li>
+                    <li>4 lavagens mensais</li>
+                    <li>4 ajustes técnicos</li>
+                    <li>4 alinhamentos de rodas</li>
+                    <li>1 par de pneus e câmeras a cada seis meses</li>
+                    <li>1 troca de fluido de freio a cada seis meses</li>
+                    <li>1 troca de pastilhas de freio a cada seis meses</li>
                 </ul>
-                <a class="botao" href="./manutencao.html">Selecione</a>
+                <a class="botao" href="./manutencao.html">Conhecer plano</a>
             </div>
         </div>
 
     </article>
+    </main>
 
     <footer class="footer_bg">
         <div class="footer container">
-            <img src="./img/olibike.svg" alt="Olibike logo">
+            <img src="./img/olibike.svg" alt="Logo da Olibike">
             <div class="footer_contato">
                 <h3 class="font_2_l_b cor_0">Contato</h3>
                 <ul class="font_2_m cor_C5">
-                    <li><a href="tel:+5581999991234"></a>+55 81 99999-1234</li>
+                    <li><a href="tel:+5581999991234">+55 81 99999-1234</a></li>
                     <li><a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a></li>
-                    <li>Rua: Caju com banana, 100 - Bairro Bom</li>
-                    <li>Olinda - Pe</li>
+                    <li>Rua Caju com Banana, 100 - Bairro Bom</li>
+                    <li>Olinda - PE</li>
                 </ul>
                 <div class="footer_redessociais">
-                    <a href=". q">
-                        <img src="./img/icones/instagram.svg" alt="instagram olibike">
+                    <a href="#">
+                        <img src="./img/icones/instagram.svg" alt="Instagram da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/youtube.svg" alt="Youtube olibike">
+                        <img src="./img/icones/youtube.svg" alt="YouTube da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/facebook.svg" alt="Facebook olibike">
+                        <img src="./img/icones/facebook.svg" alt="Facebook da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/twitter.svg" alt="Twitter olibike">
+                        <img src="./img/icones/twitter.svg" alt="Twitter da Olibike">
                     </a>
                 </div>
             </div>
@@ -201,7 +212,7 @@
                         <li><a href="./bikes.html">bicicletas</a></li>
                         <li><a href="./manutencao.html">manutenção</a></li>
                         <li><a href="./contato.html">contato</a></li>
-                        <li><a href="./termos.html">Termos e Condições</a></li>
+                        <li><a href="./termos.html">Termos e condições</a></li>
                     </ul>
                 </nav>
 

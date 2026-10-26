@@ -55,6 +55,7 @@
 
 .bicicletas p {
   margin-bottom: 32px;
+  max-width: 65ch;
 }
 
 .bicicletas a {

@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contato da empresa #olibike.">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Fale com a #olibike: endereço em Olinda - PE, telefone, e-mail e formulário de contato. Respondemos em até 24h.">
     <title>Contato | #olibike</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="#olibike">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Contato | #olibike">
+    <meta property="og:description" content="Fale com a #olibike: endereço em Olinda - PE, telefone, e-mail e formulário de contato. Respondemos em até 24h.">
+    <meta property="og:url" content="https://olibike.web.app/contato.html">
+    <meta property="og:image" content="https://olibike.web.app/img/olinda.jpg">
+    <meta property="og:image:alt" content="Mapa da loja em Olinda - PE">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="./favicon.svg">
     <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -14,7 +24,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
     <script>document.documentElement.classList.add('js');</script>
 </head>
 
@@ -23,7 +33,7 @@
         <div class="header container">
             <a href="./index.html"><img src="./img/olibike.svg" alt="Olibike"></a>
 
-            <nav aria-label="primarria">
+            <nav aria-label="Navegação principal">
                 <ul class="header_menu font_1_m cor_0">
                     <li><a href="./bikes.html">bicicletas</a></li>
                     <li><a href="./manutencao.html">manutenção</a></li>
@@ -44,9 +54,9 @@
 
         <div class="contato container">
             <section class="contato_dados" aria-label="Endereço">
-                <h2 class="font_1_m cor_0">Loja Online</h2>
+                <h2 class="font_1_m cor_0">Onde estamos</h2>
                 <div class="contato_endereco font_2_s cor_4">
-                    <p>Rua: Caju com banana, 100</p>
+                    <p>Rua Caju com Banana, 100</p>
                     <p>Bairro Bom</p>
                     <p>Olinda - PE</p>
                 </div>
@@ -56,39 +66,40 @@
                     <a href="tel:+5581999991234">+55 81 99999-1234</a>
                 </address>
                 <div class="contato_redes">
-                    <a href=". q">
-                        <img src="./img/contato_icones/instagram_r.svg" alt="instagram olibike">
+                    <a href="#">
+                        <img src="./img/contato_icones/instagram_r.svg" alt="Instagram da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/contato_icones/youtube_r.svg" alt="Youtube olibike">
+                        <img src="./img/contato_icones/youtube_r.svg" alt="YouTube da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/contato_icones/facebook_r.svg" alt="Facebook olibike">
+                        <img src="./img/contato_icones/facebook_r.svg" alt="Facebook da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/contato_icones/twitter_r.svg" alt="Twitter olibike">
+                        <img src="./img/contato_icones/twitter_r.svg" alt="Twitter da Olibike">
                     </a>
                 </div>
             </section>
-            <section class="contato_formulario" aria-label="Formulario">
-                <form class="form" action="./contato.html">
+            <section class="contato_formulario" aria-label="Formulário">
+                <form class="form" action="./contato.html" method="post">
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" minlength="2" maxlength="80" required>
                     </div>
                     <div>
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" placeholder="(81) 99999-9999">
+                        <input type="tel" id="telefone" name="telefone" placeholder="(81) 99999-9999" autocomplete="tel" inputmode="tel" pattern="\(?[0-9]{2}\)?[\s-]?[0-9]{4,5}[\s-]?[0-9]{4}" required>
                     </div>
                     <div class="col_2">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="fulano@email.com">
+                        <input type="email" id="email" name="email" placeholder="fulano@email.com" autocomplete="email" required>
                     </div>
                     <div class="col_2">
                         <label for="mensagem">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem" rows="5" placeholder="Escreva a sua mensage..."></textarea>
+                        <textarea name="mensagem" id="mensagem" rows="5" placeholder="Escreva a sua mensagem..." minlength="10" maxlength="1000" required></textarea>
                     </div>
-                    <button class="botao col_2">Enviar Mensagem</button>
+                    <p class="font_2_xs cor_C7 col_2">Todos os campos são obrigatórios.</p>
+                    <button class="botao col_2">Enviar mensagem</button>
                 </form>
             </section>
         </div>
@@ -97,46 +108,46 @@
     <article class="lojas container">
         <h2 class="font_1_xxl">nossa loja<span class="cor_P1">.</span></h2>
         <div class="lojas_item">
-            <img src="img/olinda.jpg" alt="mapa marcando o endereço em Rua Caju com banana, 100 Olinda - PE">
+            <img src="img/olinda.jpg" alt="Mapa marcando a loja na Rua Caju com Banana, 100, em Olinda - PE" loading="lazy" width="2320" height="1064">
             <div class="lojas_conteudo">
-                <h3 class="font_1_xl">Olida-PE</h3>
+                <h3 class="font_1_xl">Olinda - PE</h3>
 
                 <div class="lojas_dados font_2_s cor_C8">
-                    <p>Rua: Caju com Banana, 100</p>
+                    <p>Rua Caju com Banana, 100</p>
                     <p>Olinda - PE</p>
                 </div>
                 <div class="lojas_dados font_2_s cor_C8">
                     <a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a>
                     <a href="tel:+5581999991234">+55 81 99999-1234</a>
                 </div>
-                <p class="lojas_tempo font_1_s" data-semana="1, 2, 3, 4, 5, 6" data-horario="8, 18"><img src="img/contato_icones/horario.svg" alt="">08-18h de seg à sabos</p>
+                <p class="lojas_tempo font_1_s" data-semana="1, 2, 3, 4, 5, 6" data-horario="8, 18"><img src="img/contato_icones/horario.svg" alt="">Seg a sáb, das 8h às 18h</p>
             </div>
         </div>
     </article>
 
     <footer class="footer_bg">
         <div class="footer container">
-            <img src="./img/olibike.svg" alt="Olibike logo">
+            <img src="./img/olibike.svg" alt="Logo da Olibike">
             <div class="footer_contato">
                 <h3 class="font_2_l_b cor_0">Contato</h3>
                 <ul class="font_2_m cor_C5">
-                    <li><a href="tel:+5581999991234"></a>+55 81 99999-1234</li>
+                    <li><a href="tel:+5581999991234">+55 81 99999-1234</a></li>
                     <li><a href="mailto:contato@olibike.com.br">contato@olibike.com.br</a></li>
-                    <li>Rua: Caju com banana, 100 - Bairro Bom</li>
-                    <li>Olinda - Pe</li>
+                    <li>Rua Caju com Banana, 100 - Bairro Bom</li>
+                    <li>Olinda - PE</li>
                 </ul>
                 <div class="footer_redessociais">
-                    <a href=". q">
-                        <img src="./img/icones/instagram.svg" alt="instagram olibike">
+                    <a href="#">
+                        <img src="./img/icones/instagram.svg" alt="Instagram da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/youtube.svg" alt="Youtube olibike">
+                        <img src="./img/icones/youtube.svg" alt="YouTube da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/facebook.svg" alt="Facebook olibike">
+                        <img src="./img/icones/facebook.svg" alt="Facebook da Olibike">
                     </a>
                     <a href="#">
-                        <img src="./img/icones/twitter.svg" alt="Twitter olibike">
+                        <img src="./img/icones/twitter.svg" alt="Twitter da Olibike">
                     </a>
                 </div>
             </div>
@@ -147,7 +158,7 @@
                         <li><a href="./bikes.html">bicicletas</a></li>
                         <li><a href="./manutencao.html">manutenção</a></li>
                         <li><a href="./contato.html">contato</a></li>
-                        <li><a href="./termos.html">Termos e Condições</a></li>
+                        <li><a href="./termos.html">Termos e condições</a></li>
                     </ul>
                 </nav>
 
